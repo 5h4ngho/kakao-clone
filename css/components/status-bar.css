@@ -1,0 +1,29 @@
+/* CSS Hack */
+.status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: white;
+  z-index: 99;
+}
+.status-bar__col {
+  width: 33%;
+}
+.status-bar__col .fa-wifi {
+  margin-left: 5px;
+}
+.status-bar__col:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__col:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.status-bar__col:last-child .fas {
+  margin: 0 0 0 5px;
+}

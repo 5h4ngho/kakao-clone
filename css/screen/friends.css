@@ -1,0 +1,13 @@
+#friends_name_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  color: var(--main-color-gray);
+  background-color: var(--main-color-lightgray);
+  margin-top: -0.5rem;
+}
+#friends_name_display__text {
+  margin: 0 0.5rem;
+  color: var(--text-color-black);
+}

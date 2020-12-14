@@ -3,62 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/77f73e6ee8.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <title>Friends | Kakao Clone</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Friends | KokoaTalk</title>
   </head>
   <body>
     <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">13:54</span>
-      </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
+      <div class="status-bar__col">
+        <span>No Service</span>
         <i class="fas fa-wifi"></i>
-        <i class="fas fa-battery-full"></i>
-        <span class="status-bar__battery-level">100%</span>
+      </div>
+      <div class="status-bar__col">
+        <span>09:41</span>
+      </div>
+      <div class="status-bar__col">
+        <span>50%</span>
+        <i class="fas fa-battery-half fa-lg"></i>
+        <i class="fas fa-bolt"></i>
       </div>
     </div>
+
     <header class="header">
       <div class="header__header-column">
         <h1 class="header__title">Friends</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
-          <i class="fas fa-search"></i>
+          <i class="fas fa-search fa-lg"></i>
         </span>
         <span class="header__icon">
-          <i class="fas fa-cog"></i>
+          <i class="fas fa-music fa-lg"></i>
+        </span>
+        <span class="header__icon">
+          <a href="settings.html"><i class="fas fa-cog fa-lg"></i></a>
         </span>
       </div>
     </header>
+
+    <div id="friends_name_display">
+      <i class="fas fa-info-circle"></i>
+      <span id="friends_name_display__text">Friends' Names Display</span>
+      <i class="fas fa-chevron-right"></i>
+    </div>
+    <main class="screen friend-screen">
+      <div class="user-components">
+        <div class="user-components__col">
+          <div class="user-components__avatar">
+            <img
+              class="user-components__avatar__lg"
+              src="https://avatars2.githubusercontent.com/u/52478811?s=460&u=1db96ada0544d52f4114f31190e4b204c9ad100b&v=4"
+            />
+          </div>
+          <div class="user-components__info">
+            <h4 class="user-components__info__name">Shangho</h4>
+          </div>
+        </div>
+      </div>
+      <div class="section__header">
+        <span class="section__header__text">Channel</span>
+        <i class="fas fa-chevron-up fa-sm"></i>
+      </div>
+      <div class="user-components">
+        <div class="user-components__col">
+          <div class="user-components__avatar">
+            <img
+              class="user-components__avatar__sm"
+              src="https://play-lh.googleusercontent.com/cf3DwPLbS8Z55sDvUSTQ6PL1goPdm8KbZ81g4TEUAaeUh5LDhkzdjxKQ2RX6BGpv0x4"
+            />
+          </div>
+          <div class="user-components__info">
+            <h4 class="user-components__info__channel">Channel</h4>
+          </div>
+        </div>
+        <div class="user-components__action">
+          <a class="user-components__action__link" href="#">
+            <span>2</span>
+            <i class="fas fa-chevron-right fa-sm"></i>
+          </a>
+        </div>
+      </div>
+      <div class="section__header">
+        <span class="section__header__text">Friends 2</span>
+        <i class="fas fa-chevron-up fa-sm"></i>
+      </div>
+      <div class="user-components">
+        <div class="user-components__col">
+          <div class="user-components__avatar">
+            <img
+              class="user-components__avatar__sm"
+              src="https://avatars1.githubusercontent.com/u/3612017?s=400&u=b744af8b355b4e4e2d6a631ccd3287c1e2978dad&v=4"
+            />
+          </div>
+          <div class="user-components__info">
+            <h4 class="user-components__info__channel">Nicolás</h4>
+          </div>
+        </div>
+      </div>
+      <div class="user-components">
+        <div class="user-components__col">
+          <div class="user-components__avatar">
+            <img
+              class="user-components__avatar__sm"
+              src="https://avatars0.githubusercontent.com/u/29245056"
+            />
+          </div>
+          <div class="user-components__info">
+            <h4 class="user-components__info__channel">Nomadcoders.co</h4>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list-item">
           <a href="friends.html" class="nav__list-link">
-            <i class="fas fa-user"></i>
+            <i class="fas fa-user fa-lg"></i>
           </a>
         </li>
         <li class="nav__list-item">
-          <a href="index.html" class="nav__list-link">
-            <i class="far fa-comment"></i>
+          <a href="chat.html" class="nav__list-link">
+            <span class="nav__notification">1</span>
+            <i class="far fa-comment fa-lg"></i>
           </a>
         </li>
         <li class="nav__list-item">
           <a href="find.html" class="nav__list-link">
-            <i class="fas fa-search"></i>
+            <i class="fas fa-search fa-lg"></i>
           </a>
         </li>
         <li class="nav__list-item">
           <a href="more.html" class="nav__list-link">
-            <i class="fas fa-ellipsis-h"></i>
+            <span class="nav__new new"></span>
+            <i class="fas fa-ellipsis-h fa-lg"></i>
           </a>
         </li>
       </ul>
     </nav>
+
+    <script
+      src="https://kit.fontawesome.com/dc194bb9ca.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

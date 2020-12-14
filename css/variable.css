@@ -1,0 +1,14 @@
+:root {
+  --main-color-yellow: #fbe135;
+  --main-color-lightgray: #f9f9fa;
+  --main-color-gray: #d5d5d5;
+  --main-color-red: #ff6332;
+  --main-color-pink: #ff83cc;
+  --main-color-bgblue: #a8c1cd;
+
+  --text-color-gray: #999999;
+  --text-color-black: #000000;
+  --text-color-chatblack: #00000080;
+
+  --horizontal-space: 1.5rem;
+}

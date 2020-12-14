@@ -1,0 +1,36 @@
+.alt-header {
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem var(--horizontal-space);
+  background-color: white;
+  z-index: 99;
+}
+.alt-header__col {
+  width: 33%;
+}
+.alt-header__col a {
+  text-decoration: none;
+  color: var(--text-color-black);
+}
+.alt-header__col.title {
+  font-size: 1.5rem;
+}
+.alt-header__col .fa-wifi {
+  margin-left: 5px;
+}
+.alt-header__col:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.alt-header__col:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.alt-header__col:last-child i {
+  margin-left: 0.5rem;
+}
