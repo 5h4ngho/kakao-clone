@@ -105,3 +105,45 @@
   height: 2.1rem;
   outline: none;
 }
+.input-comment:focus-within .col-plus {
+  opacity: 0;
+  visibility: none;
+  display: none;
+}
+.input-comment:focus-within .col-text {
+  width: 100%;
+}
+
+@keyframes fadein {
+  from {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes fadein-r {
+  from {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.msg-row {
+  opacity: 0;
+  animation: fadein 1s ease-in-out forwards 0.5s;
+}
+.msg-row-own {
+  opacity: 0;
+  animation: fadein-r 1s ease-in-out forwards 1.5s;
+}
+.msg-row:last-child {
+  opacity: 0;
+  animation: fadein 1s ease-in-out forwards 2.5s;
+}

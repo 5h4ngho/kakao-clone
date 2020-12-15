@@ -11,3 +11,24 @@
   margin: 0 0.5rem;
   color: var(--text-color-black);
 }
+@keyframes splash {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#splash-screen {
+  background-color: var(--main-color-yellow);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 100;
+  animation: splash 0.5s ease-in-out forwards 1.3s;
+}

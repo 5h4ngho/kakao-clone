@@ -43,3 +43,7 @@
 .section_header__expand {
   font-size: 0.9rem;
 }
+.header__icon i:hover {
+  transform: scale(1.5);
+  transition: transform 0.2s;
+}

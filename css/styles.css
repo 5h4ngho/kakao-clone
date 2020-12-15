@@ -25,3 +25,21 @@ body {
 .screen {
   padding: 0 var(--horizontal-space);
 }
+#no-mobile {
+  position: absolute;
+  z-index: 999;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--main-color-yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  font-size: 2rem;
+}
+@media screen and (max-width: 600px) {
+  #no-mobile {
+    display: none;
+  }
+}
